@@ -21,7 +21,7 @@ namespace Nukacola
                 new DynamicSpawnPoint
                 {
                     Chance = Plugin.Singleton.Config.SpawnChance,
-                    Location = SpawnLocation.InsideNukeArmory,
+                    Location = SpawnLocation.InsideHid,
                 }
             }
         };
