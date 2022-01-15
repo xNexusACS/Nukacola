@@ -9,7 +9,7 @@ namespace Nukacola
         public override string Name { get; } = "NukaCola";
         public override string Prefix { get; } = "nukacola";
         public override string Author { get; } = "xNexus-ACS";
-        public override Version Version { get; } = new Version(0, 3, 0);
+        public override Version Version { get; } = new Version(0, 4, 0);
         public override Version RequiredExiledVersion { get; } = new Version(4, 2, 2);
 
         public Nukacola nukacola;
