@@ -61,6 +61,7 @@ namespace Nukacola
         {
             if (Check(ev.Pickup))
             {
+                base.OnPickingUp(ev);
                 ev.Player.ShowHint("You taken the Nukacola");
             }
         }
