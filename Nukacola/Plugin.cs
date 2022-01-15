@@ -24,6 +24,7 @@ namespace Nukacola
         }
         public override void OnDisabled()
         {
+            Singleton = null;
             base.OnDisabled();
         }
         public void NukaCola()
