@@ -1,5 +1,6 @@
 ﻿using System;
 using Exiled.API.Features;
+using Exiled.CustomItems.API;
 
 namespace Nukacola
 {
@@ -9,8 +10,8 @@ namespace Nukacola
         public override string Name { get; } = "NukaCola";
         public override string Prefix { get; } = "nukacola";
         public override string Author { get; } = "xNexus-ACS";
-        public override Version Version { get; } = new Version(0, 4, 0);
-        public override Version RequiredExiledVersion { get; } = new Version(4, 2, 2);
+        public override Version Version { get; } = new Version(2, 1, 0);
+        public override Version RequiredExiledVersion { get; } = new Version(5, 2, 2);
 
         public Nukacola nukacola;
 
@@ -20,6 +21,7 @@ namespace Nukacola
             Log.Info("Nukacola Loaded, new Item!!");
 
             base.OnEnabled();
+
             NukaCola();
         }
         public override void OnDisabled()
@@ -30,7 +32,7 @@ namespace Nukacola
         public void NukaCola()
         {
             nukacola = new Nukacola { Type = ItemType.SCP207 };
-            nukacola.TryRegister();
+            nukacola.Register();
         }
     }
 }
